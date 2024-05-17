@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Creación de Proyectos en Python</title>
 </head>
 <body>
     <h1>Creación de Proyectos en Python</h1>
