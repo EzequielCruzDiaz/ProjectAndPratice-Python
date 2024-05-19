@@ -50,7 +50,7 @@ Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos 
 
 ## Contacto
 
-Si tienes alguna pregunta, no dudes en contactarme en [tu-email@example.com](mailto:tu-email@example.com).
+Si tienes alguna pregunta, no dudes en contactarme en [tu-email@example.com](ezequielcruz018@gmail.com).
 
 ---
 
