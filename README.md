@@ -19,7 +19,3 @@ Un asistente virtual básico que responde a comandos de voz. Este proyecto intro
 ### 3. Generador de Imágenes
 
 Una aplicación que genera imágenes aleatorias de diferentes categorías utilizando la API de Unsplash. Es un proyecto ideal para aprender sobre el consumo de APIs y la manipulación de imágenes en Python.
-
-## Cómo Empezar
-
-Para comenzar a utilizar los proyectos en
