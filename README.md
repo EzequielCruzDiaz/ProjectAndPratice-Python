@@ -33,6 +33,16 @@
         a:hover {
             text-decoration: underline;
         }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        ol {
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -42,14 +52,14 @@
 
         <h2>Tabla de Contenidos</h2>
         <ul>
-            <li><a href="#descripción">Descripción</a></li>
-            <li><a href="#instalación">Instalación</a></li>
+            <li><a href="#descripcion">Descripción</a></li>
+            <li><a href="#instalacion">Instalación</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contribuciones">Contribuciones</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
 
-        <h2 id="descripción">Descripción</h2>
+        <h2 id="descripcion">Descripción</h2>
         <p>Este repositorio contiene diversos proyectos en Python que abarcan diferentes niveles de dificultad y áreas de aplicación, desde scripts simples hasta aplicaciones más complejas. Cada proyecto incluye:</p>
         <ul>
             <li>Descripción del proyecto</li>
@@ -59,7 +69,7 @@
             <li>Documentación adicional (si aplica)</li>
         </ul>
 
-        <h2 id="instalación">Instalación</h2>
+        <h2 id="instalacion">Instalación</h2>
         <p>Para comenzar con estos proyectos, sigue los siguientes pasos:</p>
         <ol>
             <li><p><strong>Clonar el repositorio:</strong></p>
@@ -82,16 +92,16 @@ source venv/bin/activate   # En Windows usa `venv\Scripts\activate`</code></pre>
             <li><strong>Descripción:</strong> Un script para enviar correos electrónicos de manera automática.</li>
             <li><strong>Tecnologías:</strong> Python, smtplib, email</li>
             <li><strong>Instrucciones:</strong></li>
-            <pre><code>cd enviar_correos_automaticos
+                <pre><code>cd enviar_correos_automaticos
 python enviar_correo.py</code></pre>
             <li><strong>Requisitos:</strong> Configura tus credenciales de correo en el archivo <code>config.py</code>.</li>
             <li><strong>Código:</strong></li>
-            <pre><code>import smtplib
+                <pre><code>import smtplib
 from email.mime.text import MIMEText
 
 subject = "Test message"
 body = "your message here"
-sender = "your email here "
+sender = "your email here"
 recipients=["Destiny email here"]
 password="your gmail api password here"
 
@@ -113,11 +123,11 @@ send_email(subject, body, sender, recipients, password)</code></pre>
             <li><strong>Descripción:</strong> Un asistente virtual básico que puede responder a comandos de voz.</li>
             <li><strong>Tecnologías:</strong> Python, SpeechRecognition, pyttsx3</li>
             <li><strong>Instrucciones:</strong></li>
-            <pre><code>cd asistente_virtual
+                <pre><code>cd asistente_virtual
 python asistente_virtual.py</code></pre>
             <li><strong>Requisitos:</strong> Asegúrate de tener un micrófono configurado y los paquetes necesarios instalados.</li>
             <li><strong>Código:</strong></li>
-            <pre><code>import pyjokes
+                <pre><code>import pyjokes
 import pyttsx3
 import pywhatkit
 import wikipedia
@@ -161,11 +171,10 @@ def transformar_audio_texto():
 
 def obtener_respuesta(pregunta):
     try:
-        respuesta_creada = openai.completions.create(
+        respuesta_creada = openai.Completions.create(
             engine = "text-davinci-002",
             prompt=pregunta,
             max_tokens=150
-            
         )
         return respuesta_creada.choices[0].text.strip()
     
@@ -230,7 +239,7 @@ def pedir_hora():
     hablar(hora)
 
 def pedir_informacion():
-    hablar("Hola, ¿Cómo te llamas?")
+    hablar("Hola soy Harmony, tu asistente virtual. ¿Cuál es tu nombre?")
     nombre = transformar_audio_texto()
     hablar(f"¡Hola {nombre}! ¿Cómo te sientes hoy?")
     animo = transformar_audio_texto()
@@ -242,20 +251,20 @@ def saludo_inicial(nombre, animo):
     if 6 <= hora_actual.hour < 12:
         momento = f"Buenos días {nombre}"
     elif 12 <= hora_actual.hour < 18:
-        momento = f"Buenas Tardes {nombre}"
+        momento = f"Buenas tardes {nombre}"
     else:
         momento = f"Buenas noches {nombre}"
 
-    hablar(f"{momento}, Soy harmony, tu asistente virtual.")
-    
-    if animo.lower() in ["muy bien" , "bien" , "excelente"]:
-        return hablar(f"Excelente escuchar eso {nombre}, que deseas hacer para continuar con este grandioso dia ")
-    
-    elif animo.lower()  in ["triste" , "mal"]:
-        return hablar(f"lamento que te encuentres {animo}, vamos a escuchar tu musica favorita o iniciar la app que te gusta, para subir ese animo")
-    
+    hablar(f"{momento}, soy Harmony, tu asistente virtual.")
+
+    if animo.lower() in ["muy bien", "bien", "excelente"]:
+        return hablar(f"¡Excelente escuchar eso {nombre}! ¿Qué deseas hacer para continuar con este grandioso día?")
+
+    elif animo.lower() in ["triste", "mal"]:
+        return hablar(f"Lamento que te encuentres {animo}. Vamos a escuchar tu música favorita o iniciar la app que te gusta, para subir ese ánimo")
+
     else:
-        hablar(f"Desplegare el menu de opciones.")
+        hablar(f"Desplegaré el menú de opciones.")
 
 def pedir_aplicacion():
     lista_rutas = []
@@ -287,11 +296,11 @@ def pedir_cosas():
     saludo_inicial(nombre, animo)
 
     comenzar = True
-    mientras comenzar:
-        print("\nSelecciona una Opcion:")
+    while comenzar:
+        print("\nSelecciona una opción:")
         print("1. Buscar en Internet")
         print("2. Abrir aplicación")
-        print("3. Buscar Noticias")
+        print("3. Buscar noticias")
         print("4. Pedir la fecha")
         print("5. Pedir la hora")
         print("6. Buscar en Wikipedia")
@@ -317,7 +326,7 @@ def pedir_cosas():
         elif "noticias" in pedido:
             webbrowser.open("https://www.diariolibre.com")
 
-        elif "fecha" en pedido:
+        elif "fecha" in pedido:
             pedir_dia()
             continue
 
@@ -332,15 +341,15 @@ def pedir_cosas():
             resultado = wikipedia.summary(pedido, sentences=1)
             hablar("Wikipedia dice lo siguiente:")
             hablar(resultado)
-            continuar
+            continue
 
         elif "reproduce" en pedido:
             pywhatkit.playonyt(pedido)
-            continuar
+            continue
 
         elif "chiste" en pedido:
             hablar(pyjokes.get_joke("es"))
-            continuar
+            continue
 
         elif "mensaje" en pedido:
             hablar("Enviando el mensaje")
@@ -348,10 +357,10 @@ def pedir_cosas():
             pywhatkit.sendwhatmsg_instantly("+18299673641", mensaje)
             time.sleep(5)
             pyautogui.press("enter")
-            continuar
+            continue
 
         elif "Eso es todo" en pedido:
-            hablar("Claro, ya sabes donde encontrarme")
+            hablar("Claro, ya sabes dónde encontrarme")
             comenzar = False
 
         else:
@@ -365,11 +374,11 @@ pedir_cosas()</code></pre>
             <li><strong>Descripción:</strong> Una aplicación para generar imágenes aleatorias de diferentes categorías usando la API de Unsplash.</li>
             <li><strong>Tecnologías:</strong> Python, Tkinter, requests, PIL, ttkbootstrap</li>
             <li><strong>Instrucciones:</strong></li>
-            <pre><code>cd generador_imagenes
+                <pre><code>cd generador_imagenes
 python generador_imagenes.py</code></pre>
             <li><strong>Requisitos:</strong> Asegúrate de tener una clave API de Unsplash configurada en el script.</li>
             <li><strong>Código:</strong></li>
-            <pre><code>import requests
+                <pre><code>import requests
 import tkinter as tk 
 import io 
 import tkinter as ttk
@@ -404,4 +413,28 @@ def create_gui():
     category_dropdown.grid(row=0, column=0, padx=10, pady=10,sticky="nsew")
     category_dropdown.config(width=14)
 
-    generate_button = ttk.Button(text="Generate
+    generate_button = ttk.Button(text="Generate", state="disabled", command=lambda: display_image(category_var.get()))
+    generate_button.grid(row=0, column=1, padx=10, pady=10,sticky="nsew")
+
+    label = ttk.Label(root)
+    label.grid(row=1, column=0, columnspan=2, padx=10, pady=10)
+
+create_gui()
+root.mainloop()</code></pre>
+        </ul>
+
+        <h2 id="contribuciones">Contribuciones</h2>
+        <p>Las contribuciones son bienvenidas. Por favor, sigue los siguientes pasos para contribuir:</p>
+        <ol>
+            <li>Haz un fork de este repositorio</li>
+            <li>Crea una rama para tu funcionalidad (<code>git checkout -b feature/tu-funcionalidad</code>)</li>
+            <li>Realiza tus cambios y commitea tus modificaciones (<code>git commit -am 'Agrega tu nueva funcionalidad'</code>)</li>
+            <li>Haz push a la rama (<code>git push origin feature/tu-funcionalidad</code>)</li>
+            <li>Crea un nuevo Pull Request</li>
+        </ol>
+
+        <h2 id="contacto">Contacto</h2>
+        <p>Si tienes alguna pregunta, no dudes en contactarme en <a href="mailto:tucorreo@example.com">tucorreo@example.com</a>.</p>
+    </div>
+</body>
+</html>
