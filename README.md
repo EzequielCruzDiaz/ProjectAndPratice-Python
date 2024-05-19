@@ -6,7 +6,7 @@
 
 Este repositorio contiene una colección de proyectos en Python que abarcan diversos niveles de dificultad y áreas de aplicación. Cada proyecto está diseñado para ser educativo y proporcionar una experiencia práctica en el desarrollo de software.
 
-## Proyectos
+## Proyectos Iniciales
 
 ### 1. Enviar Correos Automáticos
 
