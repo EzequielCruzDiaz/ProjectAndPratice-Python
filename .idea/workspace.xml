@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c55d3089-5797-4e89-8068-9a7399eac61e" name="Changes" comment="Second change" />
+    <list default="true" id="c55d3089-5797-4e89-8068-9a7399eac61e" name="Changes" comment="New miniprojects arrived">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ternario.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ternario.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +40,9 @@
     "accountId": "c3d7bdeb-40f4-4504-9c8c-bd5beecd0437"
   }
 }]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -54,6 +60,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.Strings format.executor": "Run",
+    "Python.Ternario.executor": "Run",
     "Python.hello.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -100,7 +107,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719436334471</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New miniprojects arrived">
+      <option name="closed" value="true" />
+      <created>1719436762083</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719436762083</updated>
+    </task>
+    <task id="LOCAL-00005" summary="New miniprojects arrived">
+      <option name="closed" value="true" />
+      <created>1719436772268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719436772268</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +152,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit to test this platform" />
     <MESSAGE value="Second change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second change" />
+    <MESSAGE value="New miniprojects arrived" />
+    <option name="LAST_COMMIT_MESSAGE" value="New miniprojects arrived" />
   </component>
 </project>
