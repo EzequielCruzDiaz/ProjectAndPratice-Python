@@ -1,7 +1,7 @@
 skills = "yes"
 #
 # if skills == "yes":
-#     message = "capable"
+#     message = "capable"       //firs form 
 # else:
 #     message = "uncapable"
 

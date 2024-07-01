@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c55d3089-5797-4e89-8068-9a7399eac61e" name="Changes" comment="New miniprojects arrived">
+    <list default="true" id="c55d3089-5797-4e89-8068-9a7399eac61e" name="Changes" comment="sd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ternario.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ternario.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +27,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "EzequielCruzDiaz"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EzequielCruzDiaz&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/EzequielCruzDiaz/ProjectAndPratice-Python.git",
-    "accountId": "c3d7bdeb-40f4-4504-9c8c-bd5beecd0437"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EzequielCruzDiaz/ProjectAndPratice-Python.git&quot;,
+    &quot;accountId&quot;: &quot;c3d7bdeb-40f4-4504-9c8c-bd5beecd0437&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.txt" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -56,17 +55,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.Strings format.executor": "Run",
-    "Python.Ternario.executor": "Run",
-    "Python.hello.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/EZEQU/Desktop/Python"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.Strings format.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Ternario.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hello.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/EZEQU/Desktop/Python&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -123,7 +122,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719436772268</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Info">
+      <option name="closed" value="true" />
+      <created>1719437410155</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719437410155</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Info">
+      <option name="closed" value="true" />
+      <created>1719437453685</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719437453685</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +168,8 @@
     <MESSAGE value="First Commit to test this platform" />
     <MESSAGE value="Second change" />
     <MESSAGE value="New miniprojects arrived" />
-    <option name="LAST_COMMIT_MESSAGE" value="New miniprojects arrived" />
+    <MESSAGE value="Info" />
+    <MESSAGE value="sd" />
+    <option name="LAST_COMMIT_MESSAGE" value="sd" />
   </component>
 </project>
