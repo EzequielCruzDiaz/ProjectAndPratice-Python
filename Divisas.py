@@ -3,6 +3,7 @@ import datetime
 nombre = input("Introduzca su nombre: ")
 fecha = datetime.datetime.now().strftime("%Y-%m-%d")
 hora = datetime.datetime.now().hour
+dolares = int(input("Introduzca la cantidad de dolares deseada a cambiar:"))
 
 
 if 5 <= hora < 12:
@@ -13,4 +14,4 @@ else:
     saludo = f"Buenas Noches {nombre}"
 
 
-print(f'{saludo} tu transaccion fue realizada el {fecha} ')
+print(f'{saludo}, \n Cantidad de dolares:{dolares} \n tu transaccion fue realizada el {fecha} ')
